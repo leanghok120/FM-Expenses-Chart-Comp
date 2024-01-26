@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
 
-  My balance
-  $921.48
+    <style></style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="balance-section sections">
+        <div class="balance-info">
+          <p class="balance-title">My balance</p>
+          <p class="total-balance">$921.48</p>
+        </div>
+        <img src="images/logo.svg" alt="logo" class="logo" />
+      </header>
+      <article class="spending-section sections">
+        <h1 class="spending-title">Spending - Last 7 days</h1>
+        <div class="chart">
+          <div class="chart-day">
+            <div class="chart-block block-1"></div>
+            <p class="day gray">mon</p>
+          </div>
+          <div class="chart-day">
+            <div class="chart-block block-2"></div>
+            <p class="day gray">tue</p>
+          </div>
+          <div class="chart-day">
+            <div class="chart-block block-3"></div>
+            <p class="day gray">wed</p>
+          </div>
+          <div class="chart-day">
+            <div class="chart-block block-4"></div>
+            <p class="day gray">thu</p>
+          </div>
+          <div class="chart-day">
+            <div class="chart-block block-5"></div>
+            <p class="day gray">fri</p>
+          </div>
+          <div class="chart-day">
+            <div class="chart-block block-6"></div>
+            <p class="day gray">sat</p>
+          </div>
+          <div class="chart-day">
+            <div class="chart-block block-7"></div>
+            <p class="day gray">sun</p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <section class="spending-stats-section flex">
+          <div class="amount-spent">
+            <p class="date gray">Total this month</p>
+            <h2 class="total-spending">$478.33</h2>
+          </div>
+          <div class="increased-percentage">
+            <p class="percentage">+2.4%</p>
+            <p class="from-date gray">from last month</p>
+          </div>
+        </section>
+      </article>
+    </main>
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://socials-link.netlify.app/">Leanghok</a>.
+    </div>
+  </body>
 </html>

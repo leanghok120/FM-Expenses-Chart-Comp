@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.gray {
+  color: rgb(121, 121, 121);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  min-width: 515px;
+  font-size: 18px;
+}
+
+.sections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  border-radius: 25px;
+}
+
+.balance-section {
+  height: 135px;
+  background-color: hsl(10, 79%, 65%);
+}
+
+.balance-title {
+  font-size: 18px;
+}
+
+.total-balance {
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.spending-section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: hsl(33, 100%, 98%);
+  color: black;
+}
+
+.spending-title {
+  justify-self: flex-start;
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chart-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.chart-block {
+  background-color: hsl(10, 79%, 65%);
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.chart-block:hover {
+  opacity: 0.5;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: hsl(27, 66%, 92%);
+  margin: 30px 0;
+}
+
+.block-2 {
+  height: 100px;
+}
+
+.block-3 {
+  height: 150px;
+  background-color: hsl(186, 34%, 60%);
+}
+
+.block-4 {
+  height: 85px;
+}
+
+.block-5 {
+  height: 65px;
+}
+
+.block-6 {
+  height: 115px;
+}
+
+.block-7 {
+  height: 75px;
+}
+
+.spending-stats-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.total-spending {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.percentage {
+  text-align: end;
+  font-weight: bold;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: bold;
+  font-style: italic;
+  transition: all 0.3s;
+}
+
+.attribution a:hover {
+  text-decoration: none;
+  color: hsl(10, 79%, 65%);
+}
